@@ -1,0 +1,122 @@
+.__container
+{
+    max-width:1030px ;
+    width: 100%;
+    margin: 0 auto;
+}
+header
+{
+    height: 150px;
+    padding: 10px;
+}
+header img
+{
+    width: 150px;
+}
+.title
+{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+footer
+{
+    min-height:150px;
+    display: flex;
+    align-items: center;
+}
+.socials{
+
+}
+.link{
+    text-decoration: none;
+}
+.articale{
+    min-height: 700px;
+}
+.article__text{
+    font-size: 25px;
+}
+.article-coments{
+    margin-top:20px;
+}
+.article-coments__label
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.article-coments__coment + .article-coments__coment
+{
+    margin-top:10px;
+}
+.article-coments__coment{
+    border: 1px solid rgb(188, 188, 188);
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 700px;
+}
+.article-comments__header{
+
+}
+.article-comments__title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.article-comments__author{
+    color:grey;
+}
+.article-comments__body{
+    font-size:20px;
+}
+.article-comments__data{
+    color:grey;
+    font-size:15px;
+    text-align: end;
+}
+
+.article__form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.form{
+
+}
+.form__title
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.form__field 
+{
+    min-height: 60px;
+}
+.form__field input,.form__field textarea{
+    max-width: 400px;
+    min-height: 30px;
+    width: 100%;
+    border:1px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+}
+.error.form__field input,.error.form__field textarea
+{
+    border:1px solid red;
+}
+.form__button
+{
+    max-width: 200px;
+    border:none;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top:20px;
+    cursor: pointer;
+}
+.form__button:hover
+{
+    background-color: grey;
+    color: white;
+}
