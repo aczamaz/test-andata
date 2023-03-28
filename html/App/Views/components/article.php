@@ -4,7 +4,7 @@
         Несмотря на множество нюансов, жизненный цикл разработки программного обеспечения обычно складывается из перечисленных ниже типичных этапов.
     </div>
     <div v-if="isLoad == true" class="lds-dual-ring"></div>
-    <div v-else-if="isLoad == false" class="article-coments">
+    <div v-else-if="isLoad == false && comments.length > 0" class="article-coments">
         <div class="article-coments__label">Коментарии:</div>
         <div v-for="comment in comments" class="article-coments__coment">
             <div class="article-comments__header">
