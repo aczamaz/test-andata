@@ -22,7 +22,7 @@
             </div>
         </div>
     </div>
-    <form class="article__form form">
+    <form ref="commentForm" class="article__form form">
         <div class="form__title">Напишите коментарий:</div>
         <div v-bind:class="{ error: error.name }" class="form__field">
             <input v-model="form.name" type="text" require placeholder="Имя">
