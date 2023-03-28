@@ -4,6 +4,8 @@ volumes:
 services:
   apache-ps:
     container_name: ps_apache
+    depends_on:
+      - mysql-s
     build: ./apache
     ports:
       - 8089:80

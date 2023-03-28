@@ -13,5 +13,5 @@
 <body>
     <header class="__container">
         <img src=" img/logo.svg" alt="logo" class="logo">
-        <div class="title">Стратья про разработку ПО</div>
+        <h1 class="title">Стратья про разработку ПО</h1>
     </header>

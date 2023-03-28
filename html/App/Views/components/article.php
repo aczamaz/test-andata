@@ -26,16 +26,16 @@
     <form class="article__form form">
         <div class="form__title">Напишите коментарий:</div>
         <div v-bind:class="{ error: error.name }" class="form__field">
-            <input v-model="form.name" type="text" require placeholder="Имя">
+            <input v-model="form.name" type="text" require placeholder="Имя пользователя">
         </div>
         <div v-bind:class="{ error: error.email }" class="form__field">
-            <input v-model="form.email" type="email" require placeholder="Почта">
+            <input v-model="form.email" type="email" require placeholder="Email">
         </div>
         <div v-bind:class="{ error: error.title }" class="form__field">
-            <input v-model="form.title" type="text" require placeholder="Заголовок">
+            <input v-model="form.title" type="text" require placeholder="Заголовок комментария">
         </div>
         <div v-bind:class="{ error: error.text }" class="form__field">
-            <textarea v-model="form.text" name="text" id="form__text" require cols="30" placeholder="Текст" rows="10"></textarea>
+            <textarea v-model="form.text" name="text" id="form__text" require cols="30" placeholder="Текст комментария" rows="10"></textarea>
         </div>
         <button :disabled='!canSend' @click.self.prevent="addComent" class="form__button">отправить</button>
     </form>
