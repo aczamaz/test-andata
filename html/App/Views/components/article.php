@@ -18,7 +18,7 @@
                 {{comment.text}}
             </div>
             <div class="article-comments__data">
-                {{comment.date}}
+                {{comment.created_at}}
             </div>
         </div>
     </div>
@@ -36,6 +36,6 @@
         <div v-bind:class="{ error: error.text }" class="form__field">
             <textarea v-model="form.text" name="text" id="form__text" require cols="30" placeholder="Текст" rows="10"></textarea>
         </div>
-        <button @click.self.prevent="addComent" class="form__button">отправить</button>
+        <button :disabled='!canSend' @click.self.prevent="addComent" class="form__button">отправить</button>
     </form>
 </div>

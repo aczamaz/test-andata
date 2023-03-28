@@ -110,12 +110,13 @@ footer
     max-width: 200px;
     border:none;
     height: 50px;
-    font-size: 15px;
+    font-size: 20px;
     border-radius: 10px;
     margin-top:20px;
     cursor: pointer;
+    border: 1px grey solid;
 }
-.form__button:hover
+.form__button:hover:enabled
 {
     background-color: grey;
     color: white;
