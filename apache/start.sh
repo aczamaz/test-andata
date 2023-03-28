@@ -1,6 +1,9 @@
 #!/bin/sh
 chown -R www-data:www-data /var/www/html
+#install composer
+composer install
 # prepare SSMTP
+cp .env.example .env
 envsubst < /etc/ssmtp/revaliases.tmpl > /etc/ssmtp/revaliases
 envsubst < /etc/ssmtp/ssmtp.conf.tmpl > /etc/ssmtp/ssmtp.conf
 envsubst < /etc/apache2/conf-enabled/servername.conf.tmpl > /etc/apache2/conf-enabled/servername.conf

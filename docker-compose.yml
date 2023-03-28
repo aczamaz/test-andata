@@ -22,8 +22,6 @@ services:
   mysql-s:
     container_name: ps_mysql
     build: ./mysql
-    volumes:
-      - ./mysql_data:/var/lib/mysql
     environment:
       - MYSQL_USER=test
       - MYSQL_PASSWORD=password

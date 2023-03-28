@@ -3,8 +3,8 @@
         Процесс разработки ПО охватывает проектирование, создание документации, программирование, тестирование и непрерывное техническое обслуживание программного продукта. Эти составляющие образуют конвейер рабочего процесса — последовательность этапов, с помощью которых создаются высококачественные программные продукты. Такой конвейер называется жизненным циклом разработки программного обеспечения. <br>
         Несмотря на множество нюансов, жизненный цикл разработки программного обеспечения обычно складывается из перечисленных ниже типичных этапов.
     </div>
-    <div v-if="comments.length <= 0" class="lds-dual-ring"></div>
-    <div v-else-if="comments.length > 0" class="article-coments">
+    <div v-if="isLoad == true" class="lds-dual-ring"></div>
+    <div v-else-if="isLoad == false" class="article-coments">
         <div class="article-coments__label">Коментарии:</div>
         <div v-for="comment in comments" class="article-coments__coment">
             <div class="article-comments__header">

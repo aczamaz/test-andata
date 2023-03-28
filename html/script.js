@@ -8,6 +8,7 @@ const { createApp } = Vue
         error:{ name: null, email: null, title: null, text: null },
         backendUrl:'http://localhost:8089/api/',
         isSended: false,
+        isLoad:true
       }
     },
     computed: {
@@ -87,6 +88,7 @@ const { createApp } = Vue
       .then((res)=>{
           if(res.data.success) {
             this.comments = res.data.data;
+            this.isLoad = false;
           }
           else {
             alert('Что то пошло не так');
